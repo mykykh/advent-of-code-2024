@@ -228,7 +228,7 @@ void simulate_robots(int steps, Array *robot_ps, Array *robot_vs, int map_size_x
         }
         double std = robots_std(robot_ps);
         if (std < 23) {
-            printf("%d %f\n", step, std);
+            printf("%d %f\n", step+1, std);
             print_robots(robot_ps, map_size_x, map_size_y);
             break;
         }
